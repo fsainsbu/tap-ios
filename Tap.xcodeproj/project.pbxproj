@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		019BF5E11B4A6D880016545C /* tour.xml in Resources */ = {isa = PBXBuildFile; fileRef = 019BF5E01B4A6D880016545C /* tour.xml */; };
 		1707FBFA15771B9F0027B323 /* bg-header.png in Resources */ = {isa = PBXBuildFile; fileRef = 1707FBDF15771B9F0027B323 /* bg-header.png */; };
 		1707FC0215771B9F0027B323 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1707FBE715771B9F0027B323 /* Default.png */; };
 		1707FC0A15771B9F0027B323 /* keypad-clear-down.png in Resources */ = {isa = PBXBuildFile; fileRef = 1707FBEF15771B9F0027B323 /* keypad-clear-down.png */; };
@@ -29,7 +30,6 @@
 		1707FC40157728C80027B323 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1707FC3E157728C80027B323 /* AudioToolbox.framework */; };
 		1707FC41157728C80027B323 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1707FC3F157728C80027B323 /* MediaPlayer.framework */; };
 		1707FC4515772A270027B323 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1707FC4415772A270027B323 /* Icon.png */; };
-		1714411215C08FF300E4F40F /* Bundles in Resources */ = {isa = PBXBuildFile; fileRef = 1714411115C0501500E4F40F /* Bundles */; };
 		171ADD8F15BCE41D000D06F3 /* NonSelectableTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 171ADD8E15BCE41D000D06F3 /* NonSelectableTextView.m */; };
 		1730F41C1577B46B003333C4 /* TapConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1730F41B1577B46B003333C4 /* TapConfig.plist */; };
 		1735520015DD7D4B008B3A5E /* AudioStopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 173551FF15DD7D4B008B3A5E /* AudioStopViewController.m */; };
@@ -134,6 +134,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		019BF5E01B4A6D880016545C /* tour.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = tour.xml; sourceTree = "<group>"; };
 		1707FBDF15771B9F0027B323 /* bg-header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-header.png"; path = "Resources/bg-header.png"; sourceTree = "<group>"; };
 		1707FBE715771B9F0027B323 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
 		1707FBEF15771B9F0027B323 /* keypad-clear-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "keypad-clear-down.png"; path = "Resources/keypad-clear-down.png"; sourceTree = "<group>"; };
@@ -163,7 +164,6 @@
 		1707FC4415772A270027B323 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
 		1707FC4615772A9C0027B323 /* ImageScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ImageScrollViewController.h; path = Classes/ImageScrollViewController.h; sourceTree = "<group>"; };
 		1707FC4715772A9C0027B323 /* ImageScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ImageScrollViewController.m; path = Classes/ImageScrollViewController.m; sourceTree = "<group>"; };
-		1714411115C0501500E4F40F /* Bundles */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Bundles; path = Tap/Bundles; sourceTree = "<group>"; };
 		171ADD8D15BCE41D000D06F3 /* NonSelectableTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NonSelectableTextView.h; path = Classes/NonSelectableTextView.h; sourceTree = "<group>"; };
 		171ADD8E15BCE41D000D06F3 /* NonSelectableTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = NonSelectableTextView.m; path = Classes/NonSelectableTextView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		1730F41B1577B46B003333C4 /* TapConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TapConfig.plist; sourceTree = "<group>"; };
@@ -329,6 +329,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		019BF5DC1B4A6D880016545C /* Bundles */ = {
+			isa = PBXGroup;
+			children = (
+				019BF5DD1B4A6D880016545C /* HobartUrbanArt */,
+			);
+			name = Bundles;
+			path = Tap/Bundles;
+			sourceTree = "<group>";
+		};
+		019BF5DD1B4A6D880016545C /* HobartUrbanArt */ = {
+			isa = PBXGroup;
+			children = (
+				019BF5DE1B4A6D880016545C /* en */,
+			);
+			path = HobartUrbanArt;
+			sourceTree = "<group>";
+		};
+		019BF5DE1B4A6D880016545C /* en */ = {
+			isa = PBXGroup;
+			children = (
+				019BF5DF1B4A6D880016545C /* assets */,
+				019BF5E01B4A6D880016545C /* tour.xml */,
+			);
+			path = en;
+			sourceTree = "<group>";
+		};
+		019BF5DF1B4A6D880016545C /* assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 		1707FBD815771AE30027B323 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -417,7 +450,7 @@
 		17BAADF015685F150012F849 = {
 			isa = PBXGroup;
 			children = (
-				1714411115C0501500E4F40F /* Bundles */,
+				019BF5DC1B4A6D880016545C /* Bundles */,
 				17BAAE0715685F170012F849 /* Tap */,
 				17BAADFE15685F160012F849 /* Frameworks */,
 				17BAADFC15685F160012F849 /* Products */,
@@ -723,7 +756,6 @@
 				LastUpgradeCheck = 0640;
 				TargetAttributes = {
 					17BAADFA15685F160012F849 = {
-						DevelopmentTeam = 798ZSG9EDX;
 					};
 				};
 			};
@@ -776,7 +808,6 @@
 				17DE996E15ABA5C2004C8A25 /* error.aif in Resources */,
 				17DE997015ABC568004C8A25 /* StopListViewController.xib in Resources */,
 				17DE997215AC7D02004C8A25 /* TAP Help Video.mp4 in Resources */,
-				1714411215C08FF300E4F40F /* Bundles in Resources */,
 				39A48D4B16380AD7009B03AD /* (null) in Resources */,
 				39A7967E163DC99F0052DCDF /* Localizable.strings in Resources */,
 				A06D38481992CCCF006A7457 /* near-icon_2x.png in Resources */,
@@ -811,6 +842,7 @@
 				1773189D1704D04200A53F67 /* tap-splash-top@2x.png in Resources */,
 				1773189F1704D05700A53F67 /* Default@2x.png in Resources */,
 				177318A11704D24E00A53F67 /* Default-568h@2x.png in Resources */,
+				019BF5E11B4A6D880016545C /* tour.xml in Resources */,
 				177318A71704D59000A53F67 /* tap-splash-btm-568h@2x.png in Resources */,
 				177318A81704D59000A53F67 /* tap-splash-top-568h@2x.png in Resources */,
 				177318AA1704D70D00A53F67 /* Icon@2x.png in Resources */,
@@ -909,8 +941,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Frank Sainsbury (36Z5LLV83B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Frank Sainsbury (36Z5LLV83B)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -947,8 +979,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Frank Sainsbury (36Z5LLV83B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Frank Sainsbury (36Z5LLV83B)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
